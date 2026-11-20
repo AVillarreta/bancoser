@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adquirencia - Banco Serfinanza</title>
+</head>
+<body style="margin: 0; padding: 0;">
+<div class="sf-adq-landing">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+    .sf-adq-landing {
+      --sf-navy: #170C84;
+      --sf-navy-dark: #110868;
+      --sf-navy-light: #2A1FA8;
+      --sf-lavender: #EEEDF8;
+      --sf-lavender-card: #F3F2FA;
+      --sf-border: #DBD8F0;
+      --sf-text: #4A4A68;
+      --sf-text-muted: #6E6E8A;
+      --sf-green: #63B32E;
+      --sf-green-bg: #EBF5E6;
+      --sf-red: #E31D3B;
+      --sf-white: #FFFFFF;
+      --sf-radius-lg: 24px;
+      --sf-radius-md: 16px;
+      --sf-radius-sm: 10px;
+      --sf-shadow: 0 10px 30px rgba(23, 12, 132, 0.07);
+      --sf-shadow-card: 0 4px 20px rgba(23, 12, 132, 0.05);
+
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color-scheme: light;
+      color: var(--sf-text);
+      background-color: var(--sf-white);
+      line-height: 1.5;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .sf-adq-landing *,
+    .sf-adq-landing *::before,
+    .sf-adq-landing *::after {
+      box-sizing: border-box;
+    }
+
+    :where(.sf-adq-landing) a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    :where(.sf-adq-landing) :where(h1, h2, h3, h4, p) {
+      margin: 0;
+    }
+
+    .sf-container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .sf-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 13px 26px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      border: 1.5px solid transparent;
+      white-space: nowrap;
+      line-height: 1.2;
+    }
+
+    .sf-btn--primary,
+    button.sf-btn--primary,
+    a.sf-btn--primary {
+      background-color: var(--sf-navy) !important;
+      color: var(--sf-white) !important;
+      border-color: var(--sf-navy) !important;
+      box-shadow: 0 4px 14px rgba(23, 12, 132, 0.22);
+    }
+
+    .sf-btn--primary:hover,
+    button.sf-btn--primary:hover,
+    a.sf-btn--primary:hover {
+      background-color: var(--sf-navy-light) !important;
+      color: var(--sf-white) !important;
+      transform: translateY(-1px);
+    }
+
+    .sf-btn--outline,
+    a.sf-btn--outline {
+      background-color: transparent !important;
+      color: var(--sf-navy) !important;
+      border-color: var(--sf-navy) !important;
+    }
+
+    .sf-btn--outline:hover,
+    a.sf-btn--outline:hover {
+      background-color: rgba(23, 12, 132, 0.05) !important;
+    }
+
+    .sf-btn--sm {
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+
+    .sf-icon-badge {
+      width: 46px;
+      height: 46px;
+      background-color: var(--sf-lavender);
+      border-radius: 6px 23px 23px 23px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sf-subnav {
+      background-color: var(--sf-white);
+      border-bottom: 1px solid #ECEAF6;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .sf-subnav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      gap: 16px;
+    }
+
+    .sf-subnav__brand,
+    a.sf-subnav__brand {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--sf-navy) !important;
+      letter-spacing: -0.01em;
+    }
+
+    .sf-subnav__links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sf-subnav__links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--sf-text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .sf-subnav__links a:hover {
+      color: var(--sf-navy);
+    }
+
+    .sf-hero {
+      background-color: var(--sf-lavender);
+      padding: 56px 0 64px;
+    }
+
+    .sf-hero__grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .sf-hero__title {
+      font-size: 46px;
+      font-weight: 800;
+      color: var(--sf-navy);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    .sf-hero__subtitle {
+      font-size: 16.5px;
+      color: var(--sf-text-muted);
+      margin-bottom: 32px;
+      max-width: 470px;
+    }
+
+    .sf-hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .sf-hero__franchises {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .sf-hero__visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .sf-hero__photo-frame {
+      position: relative;
+      width: 390px;
+      height: 375px;
+      z-index: 2;
+    }
+
+    .sf-hero__ring-green {
+      position: absolute;
+      top: -22px;
+      left: -18px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2.5px solid var(--sf-green);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .sf-hero__backing-navy {
+      position: absolute;
+      right: -18px;
+      bottom: -18px;
+      width: 330px;
+      height: 330px;
+      background-color: var(--sf-navy);
+      border-radius: 24px 24px 190px 24px;
+      z-index: 1;
+    }
+
+    .sf-hero__photo-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 170px 24px 170px 24px;
+      overflow: hidden;
+      z-index: 2;
+      box-shadow: 0 12px 32px rgba(23, 12, 132, 0.14);
+      background-color: #dcdaf0;
+    }
+
+    .sf-hero__photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sf-float-card {
+      position: absolute;
+      background-color: var(--sf-white);
+      border-radius: 14px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 10px 25px rgba(23, 12, 132, 0.12);
+      z-index: 4;
+    }
+
+    .sf-float-card--top {
+      top: 52px;
+      right: -34px;
+    }
+
+    .sf-float-card--bottom {
+      bottom: 8px;
+      left: -14px;
+    }
+
+    .sf-float-card__icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: var(--sf-lavender);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sf-float-card__icon--green {
+      background-color: var(--sf-green-bg);
+    }
+
+    .sf-float-card__title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--sf-navy);
+      line-height: 1.25;
+    }
+
+    .sf-float-card__sub {
+      font-size: 11.5px;
+      color: var(--sf-text-muted);
+      line-height: 1.25;
+    }
+
+    .sf-hero__check-line {
+      position: absolute;
+      bottom: -26px;
+      right: -28px;
+      display: flex;
+      align-items: center;
+      z-index: 4;
+    }
+
+    .sf-hero__check-line::before {
+      content: "";
+      display: block;
+      width: 155px;
+      height: 2px;
+      background-color: var(--sf-green);
+    }
+
+    .sf-hero__check-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--sf-green);
+      color: var(--sf-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(99, 179, 46, 0.3);
+    }
+
+    .sf-potencia-bar {
+      margin-top: 64px;
+      background-color: var(--sf-navy);
+      border-radius: 20px;
+      padding: 26px 36px;
+      color: var(--sf-white);
+      display: grid;
+      grid-template-columns: 0.85fr 1fr 1fr 1fr;
+      align-items: center;
+      gap: 24px;
+      box-shadow: 0 12px 30px rgba(23, 12, 132, 0.16);
+    }
+
+    .sf-potencia-bar__heading {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .sf-potencia-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .sf-potencia-item__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--sf-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sf-potencia-item__text {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.38;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .sf-benefits {
+      padding: 80px 0;
+      background-color: var(--sf-white);
+    }
+
+    .sf-section-title {
+      font-size: 29px;
+      font-weight: 800;
+      color: var(--sf-navy);
+      line-height: 1.22;
+      letter-spacing: -0.015em;
+    }
+
+    .sf-benefits__grid {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .sf-benefit-card {
+      background-color: var(--sf-white);
+      border: 1px solid #E6E4F4;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: var(--sf-shadow-card);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .sf-benefit-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--sf-shadow);
+    }
+
+    .sf-benefit-card__title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--sf-navy);
+      margin: 18px 0 10px;
+      line-height: 1.3;
+    }
+
+    .sf-benefit-card__desc {
+      font-size: 13.5px;
+      color: var(--sf-text-muted);
+      line-height: 1.5;
+    }
+
+    .sf-steps-section {
+      background-color: var(--sf-lavender);
+      padding: 80px 0;
+    }
+
+    .sf-steps__grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .sf-steps__subtitle {
+      font-size: 15.5px;
+      font-style: italic;
+      color: var(--sf-text-muted);
+      margin: 16px 0 28px;
+      line-height: 1.55;
+    }
+
+    .sf-steps__cta-desktop {
+      margin-bottom: 34px;
+    }
+
+    .sf-steps__cta-mobile {
+      display: none;
+      margin-top: 28px;
+    }
+
+    .sf-steps__photo-box {
+      position: relative;
+      max-width: 350px;
+    }
+
+    .sf-steps__photo-backing {
+      position: absolute;
+      bottom: -12px;
+      right: -12px;
+      width: 92%;
+      height: 92%;
+      background-color: var(--sf-white);
+      border-radius: 110px 18px 110px 18px;
+      z-index: 1;
+    }
+
+    .sf-steps__photo {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 110px 18px 110px 18px;
+      display: block;
+      box-shadow: 0 8px 24px rgba(23, 12, 132, 0.1);
+    }
+
+    .sf-steps__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sf-step-item {
+      display: grid;
+      grid-template-columns: 95px 1fr;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid #DCD9EE;
+      align-items: start;
+    }
+
+    .sf-step-item:first-child {
+      padding-top: 8px;
+      border-top: 1px solid #DCD9EE;
+    }
+
+    .sf-step-item__num {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 1.6px #655DC0;
+      letter-spacing: -0.03em;
+      user-select: none;
+    }
+
+    .sf-step-item__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--sf-navy);
+      margin-bottom: 6px;
+    }
+
+    .sf-step-item__desc {
+      font-size: 14.5px;
+      color: var(--sf-text-muted);
+      line-height: 1.5;
+    }
+
+    .sf-step-item__desc strong {
+      color: var(--sf-text);
+      font-weight: 700;
+    }
+
+    .sf-sectors {
+      background-color: #F7F7FC;
+      padding: 80px 0;
+    }
+
+    .sf-sectors__subtitle {
+      font-size: 15px;
+      font-style: italic;
+      color: var(--sf-text-muted);
+      margin-top: 10px;
+      margin-bottom: 30px;
+      line-height: 1.55;
+    }
+
+    .sf-tab-radio {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .sf-tabs-nav {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin-bottom: 22px;
+      scrollbar-width: none;
+    }
+
+    .sf-tabs-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .sf-tab-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1.2px solid #8A84C7;
+      background-color: var(--sf-white);
+      color: var(--sf-navy);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .sf-tab-label:hover {
+      border-color: var(--sf-navy);
+      background-color: var(--sf-lavender);
+    }
+
+    .sf-tab-label svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    #sf-tab-1:checked ~ .sf-tabs-nav label[for="sf-tab-1"],
+    #sf-tab-2:checked ~ .sf-tabs-nav label[for="sf-tab-2"],
+    #sf-tab-3:checked ~ .sf-tabs-nav label[for="sf-tab-3"],
+    #sf-tab-4:checked ~ .sf-tabs-nav label[for="sf-tab-4"],
+    #sf-tab-5:checked ~ .sf-tabs-nav label[for="sf-tab-5"],
+    #sf-tab-6:checked ~ .sf-tabs-nav label[for="sf-tab-6"] {
+      background-color: var(--sf-navy) !important;
+      border-color: var(--sf-navy) !important;
+      color: var(--sf-white) !important;
+    }
+
+    .sf-tab-panels {
+      position: relative;
+    }
+
+    .sf-tab-panel {
+      display: none;
+      background-color: var(--sf-white);
+      border: 1px solid #E5E3F3;
+      border-radius: 22px;
+      padding: 36px 42px;
+      box-shadow: var(--sf-shadow-card);
+    }
+
+    #sf-tab-1:checked ~ .sf-tab-panels .sf-tab-panel--1,
+    #sf-tab-2:checked ~ .sf-tab-panels .sf-tab-panel--2,
+    #sf-tab-3:checked ~ .sf-tab-panels .sf-tab-panel--3,
+    #sf-tab-4:checked ~ .sf-tab-panels .sf-tab-panel--4,
+    #sf-tab-5:checked ~ .sf-tab-panels .sf-tab-panel--5,
+    #sf-tab-6:checked ~ .sf-tab-panels .sf-tab-panel--6 {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .sf-tab-panel__img-wrap {
+      width: 100%;
+      height: 235px;
+      border-radius: 105px 18px 105px 18px;
+      overflow: hidden;
+    }
+
+    .sf-tab-panel__img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sf-tab-panel__title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--sf-navy);
+      margin-bottom: 14px;
+    }
+
+    .sf-tab-panel__desc {
+      font-size: 15.5px;
+      color: var(--sf-text-muted);
+      line-height: 1.6;
+      margin-bottom: 28px;
+      max-width: 520px;
+    }
+
+    .sf-operate {
+      padding: 84px 0;
+      background-color: var(--sf-white);
+    }
+
+    .sf-operate__header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 48px;
+    }
+
+    .sf-operate__sub {
+      font-size: 15.5px;
+      color: var(--sf-text-muted);
+      margin-top: 24px;
+    }
+
+    .sf-operate__grid {
+      display: grid;
+      grid-template-columns: 1fr 28px 1fr 28px 1fr;
+      align-items: start;
+      gap: 8px;
+    }
+
+    .sf-operate__arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      color: var(--sf-green);
+    }
+
+    .sf-operate-card__visual {
+      height: 200px;
+      border-radius: 18px;
+      overflow: hidden;
+      margin-bottom: 22px;
+      position: relative;
+    }
+
+    .sf-operate-card__visual--photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+    }
+
+    .sf-operate-card__franchise-pill {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background-color: var(--sf-white);
+      border-radius: 10px;
+      padding: 7px 14px;
+      display: inline-flex;
+      align-items: center;
+      box-shadow: 0 4px 14px rgba(23, 12, 132, 0.14);
+    }
+
+    .sf-operate-card__franchise-pill img {
+      height: 20px !important;
+      width: auto !important;
+      object-fit: contain !important;
+      display: block;
+    }
+
+    .sf-operate-card__visual--abono {
+      background-color: #ECF6E8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .sf-abono-pill {
+      background-color: var(--sf-white);
+      border-radius: 14px;
+      padding: 14px 18px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(23, 12, 132, 0.08);
+    }
+
+    .sf-abono-pill__left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sf-abono-pill__title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--sf-navy);
+    }
+
+    .sf-abono-pill__sub {
+      font-size: 11px;
+      color: var(--sf-text-muted);
+    }
+
+    .sf-abono-pill__amount {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--sf-green);
+      white-space: nowrap;
+    }
+
+    .sf-operate-card__visual--portal {
+      background-color: #F3F2FA;
+      padding: 14px 16px 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sf-portal-ui {
+      background-color: var(--sf-white);
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 4px 16px rgba(23, 12, 132, 0.08);
+      flex: 1;
+      overflow: hidden;
+      font-size: 10px;
+    }
+
+    .sf-portal-ui__dots {
+      display: flex;
+      gap: 4px;
+      padding: 6px 10px;
+      background-color: #F8F8FC;
+    }
+
+    .sf-portal-ui__dots span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .sf-portal-ui__topbar {
+      background-color: var(--sf-navy);
+      color: var(--sf-white);
+      padding: 6px 12px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 9.5px;
+    }
+
+    .sf-portal-ui__stats {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 8px;
+      padding: 10px 12px;
+    }
+
+    .sf-portal-ui__stat-box {
+      border: 1px solid #ECEAF6;
+      border-radius: 6px;
+      padding: 6px 8px;
+    }
+
+    .sf-portal-ui__stat-label {
+      color: var(--sf-text-muted);
+      font-size: 8px;
+    }
+
+    .sf-portal-ui__stat-val {
+      color: var(--sf-navy);
+      font-weight: 800;
+      font-size: 12px;
+      margin: 2px 0;
+    }
+
+    .sf-portal-ui__stat-badge {
+      color: var(--sf-green);
+      font-size: 7.5px;
+      font-weight: 600;
+    }
+
+    .sf-portal-ui__table {
+      padding: 0 12px 8px;
+    }
+
+    .sf-portal-ui__row {
+      display: flex;
+      justify-content: space-between;
+      padding: 3px 0;
+      border-bottom: 1px solid #F2F1F8;
+      font-size: 8px;
+      color: var(--sf-text-muted);
+    }
+
+    .sf-portal-ui__row--head {
+      font-weight: 700;
+      color: var(--sf-navy);
+      background-color: #F4F3FA;
+      padding: 3px 6px;
+      border-radius: 3px;
+    }
+
+    .sf-operate-card__heading {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .sf-operate-card__num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: var(--sf-navy);
+      color: var(--sf-white);
+      font-size: 13px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sf-operate-card__title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--sf-navy);
+    }
+
+    .sf-operate-card__desc {
+      font-size: 13.5px;
+      color: var(--sf-text-muted);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .sf-check-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .sf-check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--sf-text-muted);
+      line-height: 1.42;
+    }
+
+    .sf-check-list li svg {
+      width: 15px;
+      height: 15px;
+      color: var(--sf-navy);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .sf-more-solutions {
+      background-color: var(--sf-navy);
+      padding: 80px 0;
+      color: var(--sf-white);
+    }
+
+    .sf-more-solutions__title {
+      font-size: 29px;
+      font-weight: 800;
+      color: var(--sf-white);
+      margin-bottom: 24px;
+    }
+
+    .sf-more-solutions__sub {
+      font-size: 15.5px;
+      color: rgba(255, 255, 255, 0.88);
+      max-width: 820px;
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+
+    .sf-more-solutions__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .sf-solution-card {
+      background-color: var(--sf-white);
+      border-radius: 18px;
+      padding: 30px 26px;
+      color: var(--sf-text);
+    }
+
+    .sf-solution-card__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--sf-navy);
+      margin: 18px 0 8px;
+    }
+
+    .sf-solution-card__desc {
+      font-size: 14px;
+      color: var(--sf-text-muted);
+      line-height: 1.5;
+    }
+
+    .sf-more-solutions__legal {
+      margin-top: 24px;
+      font-size: 12px;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.5;
+    }
+
+    .sf-costs-faq {
+      padding: 84px 0;
+      background-color: var(--sf-white);
+    }
+
+    .sf-costs-faq__top {
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: 48px;
+      align-items: start;
+      margin-bottom: 44px;
+    }
+
+    .sf-costs-faq__intro {
+      font-size: 15px;
+      color: var(--sf-text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .sf-costs-faq__bottom {
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .sf-req-box {
+      background-color: var(--sf-lavender);
+      border: 1px solid #DFDCF2;
+      border-radius: 18px;
+      padding: 28px 26px;
+    }
+
+    .sf-req-box__title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--sf-navy);
+      margin-bottom: 10px;
+    }
+
+    .sf-req-box__sub {
+      font-size: 13.5px;
+      color: var(--sf-text-muted);
+      margin-bottom: 16px;
+    }
+
+    .sf-req-box .sf-check-list li {
+      font-size: 13.5px;
+      margin-bottom: 6px;
+    }
+
+    .sf-req-box__link {
+      color: var(--sf-navy) !important;
+      font-weight: 700;
+      font-style: italic;
+      text-decoration: underline !important;
+    }
+
+    .sf-faq__heading {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--sf-navy);
+      margin-bottom: 24px;
+    }
+
+    .sf-faq-list {
+      border-top: 1px solid #E8E6F4;
+    }
+
+    .sf-faq-item {
+      border-bottom: 1px solid #E8E6F4;
+    }
+
+    .sf-faq-item summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--sf-navy);
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .sf-faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .sf-faq-item__chevron {
+      width: 18px;
+      height: 18px;
+      color: var(--sf-navy);
+      transition: transform 0.22s ease;
+      flex-shrink: 0;
+    }
+
+    .sf-faq-item[open] .sf-faq-item__chevron {
+      transform: rotate(180deg);
+    }
+
+    .sf-faq-item__body {
+      padding-bottom: 18px;
+      font-size: 14px;
+      color: var(--sf-text-muted);
+      line-height: 1.55;
+    }
+
+    .sf-form-section {
+      background-color: var(--sf-navy);
+      padding: 84px 0 96px;
+    }
+
+    .sf-form-section__header {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 24px;
+      color: var(--sf-white);
+    }
+
+    .sf-form-section__title {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.22;
+      margin-bottom: 24px;
+    }
+
+    .sf-form-section__sub {
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.5;
+    }
+
+    .sf-form-card {
+      background-color: var(--sf-white);
+      max-width: 540px;
+      margin: 0 auto;
+      border-radius: 22px;
+      padding: 38px 36px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+    }
+
+    .sf-form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .sf-form-group {
+      margin-bottom: 18px;
+    }
+
+    .sf-form-label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--sf-navy);
+      margin-bottom: 7px;
+    }
+
+    .sf-form-input,
+    .sf-form-select {
+      width: 100%;
+      height: 44px;
+      padding: 0 14px;
+      border: 1px solid #DCD9EE;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13.5px;
+      color: var(--sf-text);
+      background-color: var(--sf-white);
+      transition: border-color 0.2s ease;
+    }
+
+    .sf-form-input::placeholder {
+      color: #A2A0BA;
+    }
+
+    .sf-form-input:focus,
+    .sf-form-select:focus {
+      outline: none;
+      border-color: var(--sf-navy);
+    }
+
+    .sf-form-radios {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding-top: 4px;
+    }
+
+    .sf-radio-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--sf-text-muted);
+      cursor: pointer;
+    }
+
+    .sf-radio-label input[type="radio"] {
+      accent-color: var(--sf-navy);
+      width: 17px;
+      height: 17px;
+      margin: 0;
+    }
+
+    .sf-form-legal {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 20px 0 24px;
+      font-size: 11.5px;
+      font-style: italic;
+      color: var(--sf-text-muted);
+      line-height: 1.45;
+    }
+
+    .sf-form-legal input[type="checkbox"] {
+      accent-color: var(--sf-navy);
+      width: 16px;
+      height: 16px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .sf-form-submit {
+      width: 100%;
+      padding: 15px 24px;
+      font-size: 14.5px;
+    }
+
+    @media (max-width: 992px) {
+      .sf-subnav__links {
+        display: none;
+      }
+
+      .sf-hero__grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .sf-potencia-bar {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 28px 24px;
+      }
+
+      .sf-benefits__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .sf-steps__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      #sf-tab-1:checked ~ .sf-tab-panels .sf-tab-panel--1,
+      #sf-tab-2:checked ~ .sf-tab-panels .sf-tab-panel--2,
+      #sf-tab-3:checked ~ .sf-tab-panels .sf-tab-panel--3,
+      #sf-tab-4:checked ~ .sf-tab-panels .sf-tab-panel--4,
+      #sf-tab-5:checked ~ .sf-tab-panels .sf-tab-panel--5,
+      #sf-tab-6:checked ~ .sf-tab-panels .sf-tab-panel--6 {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px;
+      }
+
+      .sf-operate__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .sf-operate__arrow {
+        height: 36px;
+        transform: rotate(90deg);
+      }
+
+      .sf-more-solutions__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sf-costs-faq__top,
+      .sf-costs-faq__bottom {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .sf-subnav {
+        display: none;
+      }
+
+      .sf-hero {
+        padding: 36px 0 44px;
+      }
+
+      .sf-hero__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .sf-hero__content {
+        display: contents;
+      }
+
+      .sf-hero__title {
+        order: 1;
+        font-size: 32px;
+        margin-bottom: 4px;
+      }
+
+      .sf-hero__subtitle {
+        order: 2;
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      .sf-hero__visual {
+        order: 3;
+        padding: 14px 8px 26px;
+        width: 100%;
+      }
+
+      .sf-hero__photo-frame {
+        width: 100%;
+        max-width: 310px;
+        height: 300px;
+      }
+
+      .sf-hero__backing-navy {
+        width: 260px;
+        height: 260px;
+        right: -12px;
+        bottom: -12px;
+      }
+
+      .sf-float-card--top {
+        top: 26px;
+        right: -12px;
+        padding: 9px 12px;
+      }
+
+      .sf-float-card--bottom {
+        bottom: 6px;
+        left: -10px;
+        padding: 9px 12px;
+      }
+
+      .sf-hero__check-line {
+        right: -10px;
+        bottom: -22px;
+      }
+
+      .sf-hero__check-line::before {
+        width: 110px;
+      }
+
+      .sf-hero__actions {
+        order: 4;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+
+      .sf-hero__actions .sf-btn {
+        width: 100%;
+      }
+
+      .sf-hero__franchises {
+        order: 5;
+      }
+
+      .sf-potencia-bar {
+        margin-top: 36px;
+      }
+
+      .sf-benefits {
+        padding: 52px 0;
+      }
+
+      .sf-section-title {
+        font-size: 25px;
+      }
+
+      .sf-benefits__grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 24px;
+      }
+
+      .sf-benefit-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px;
+      }
+
+      .sf-benefit-card__title {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
+
+      .sf-steps-section {
+        padding: 52px 0;
+      }
+
+      .sf-steps__cta-desktop,
+      .sf-steps__photo-box {
+        display: none;
+      }
+
+      .sf-steps__cta-mobile {
+        display: block;
+      }
+
+      .sf-steps__cta-mobile .sf-btn {
+        width: 100%;
+      }
+
+      .sf-step-item {
+        grid-template-columns: 68px 1fr;
+        gap: 14px;
+        padding: 18px 0;
+      }
+
+      .sf-step-item__num {
+        font-size: 42px;
+      }
+
+      .sf-sectors {
+        padding: 52px 0;
+      }
+
+      .sf-tab-panel__img-wrap {
+        border-radius: 14px;
+        height: 200px;
+      }
+
+      .sf-tab-panel .sf-btn--primary,
+      .sf-tab-panel a.sf-btn--primary {
+        background-color: transparent !important;
+        border: none !important;
+        outline: none !important;
+        color: var(--sf-navy) !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        text-decoration: underline !important;
+        font-size: 13.5px;
+        justify-content: flex-start;
+      }
+
+      .sf-operate {
+        padding: 52px 0;
+      }
+
+      .sf-operate__header {
+        text-align: left;
+        margin-bottom: 28px;
+      }
+
+      .sf-more-solutions {
+        padding: 52px 0;
+      }
+
+      .sf-more-solutions__title {
+        font-size: 25px;
+      }
+
+      .sf-costs-faq {
+        padding: 52px 0;
+      }
+
+      .sf-costs-faq__top .sf-btn {
+        width: 100%;
+      }
+
+      .sf-form-section {
+        padding: 52px 0 64px;
+      }
+
+      .sf-form-section__header {
+        text-align: left;
+      }
+
+      .sf-form-section__title {
+        font-size: 25px;
+      }
+
+      .sf-form-card {
+        padding: 26px 20px;
+      }
+
+      .sf-form-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+  </style>
+  <nav class="sf-subnav" aria-label="Navegación de sección Adquirencia">
+    <div class="sf-container sf-subnav__inner">
+      <a href="#sf-inicio" class="sf-subnav__brand">Adquirencia</a>
+      <ul class="sf-subnav__links">
+        <li><a href="#sf-beneficios">Beneficios</a></li>
+        <li><a href="#sf-vinculacion">Vinculación</a></li>
+        <li><a href="#sf-sectores">Solución para cada negocio</a></li>
+        <li><a href="#sf-herramientas">Herramientas</a></li>
+        <li><a href="#sf-costos-faq">Costos, requisitos y FAQ</a></li>
+      </ul>
+      <a href="#sf-formulario" class="sf-btn sf-btn--primary sf-btn--sm">
+        Quiero recibir pagos con tarjeta
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </nav>
+  <section id="sf-inicio" class="sf-hero">
+    <div class="sf-container">
+      <div class="sf-hero__grid">
+        <div class="sf-hero__content">
+          <h1 class="sf-hero__title">Soluciones de pago<br>para tu negocio</h1>
+          <p class="sf-hero__subtitle">Más formas de cobrar para que tu negocio nunca se detenga.</p>
+
+          <div class="sf-hero__actions">
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary">
+              Quiero recibir pagos con tarjeta
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#sf-formulario" class="sf-btn sf-btn--outline">
+              Hablar con un asesor
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </a>
+          </div>
+          <div class="sf-hero__franchises" aria-label="Franquicias aceptadas: Mastercard y Visa">
+            <img src="images/visa-logo.png" alt="Mastercard y Visa" style="height: 32px; width: auto; display: block;" />
+          </div>
+        </div>
+        <div class="sf-hero__visual">
+          <div class="sf-hero__photo-frame">
+            <div class="sf-hero__ring-green"></div>
+            <div class="sf-hero__backing-navy"></div>
+
+            <div class="sf-hero__photo-wrap">
+              <img src="images/hero.png" alt="Comerciante recibiendo pagos con datáfono Banco Serfinanza" />
+            </div>
+            <div class="sf-float-card sf-float-card--top">
+              <div class="sf-float-card__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><circle cx="7" cy="15" r="1.2" fill="#E31D3B" stroke="none"/></svg>
+              </div>
+              <div>
+                <div class="sf-float-card__title">Visa y Mastercard</div>
+                <div class="sf-float-card__sub">Débito y crédito</div>
+              </div>
+            </div>
+            <div class="sf-float-card sf-float-card--bottom">
+              <div class="sf-float-card__icon sf-float-card__icon--green">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M4 14v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/><path d="M12 4v10"/><path d="m8 10 4 4 4-4"/><circle cx="16" cy="6" r="2.2" fill="#63B32E" stroke="none"/></svg>
+              </div>
+              <div>
+                <div class="sf-float-card__title">Abono automático</div>
+                <div class="sf-float-card__sub">En tu cuenta Serfinanza</div>
+              </div>
+            </div>
+            <div class="sf-hero__check-line">
+              <div class="sf-hero__check-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sf-potencia-bar">
+        <div class="sf-potencia-bar__heading">
+          Potencia tu punto<br>de venta:
+        </div>
+
+        <div class="sf-potencia-item">
+          <div class="sf-potencia-item__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><circle cx="7" cy="15" r="1.4" fill="#E31D3B" stroke="none"/></svg>
+          </div>
+          <div class="sf-potencia-item__text">
+            Recibe pagos con Visa y Mastercard (débito y crédito)
+          </div>
+        </div>
+
+        <div class="sf-potencia-item">
+          <div class="sf-potencia-item__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/><path d="M12 4v10"/><path d="m8 10 4 4 4-4"/><circle cx="16" cy="6" r="2.3" fill="#63B32E" stroke="none"/></svg>
+          </div>
+          <div class="sf-potencia-item__text">
+            Abono directo a tu cuenta Serfinanza.
+          </div>
+        </div>
+
+        <div class="sf-potencia-item">
+          <div class="sf-potencia-item__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6" fill="#63B32E" stroke="none"/><rect x="12" y="7" width="3" height="10" fill="#170C84" stroke="none"/><rect x="17" y="13" width="3" height="4" fill="#63B32E" stroke="none"/></svg>
+          </div>
+          <div class="sf-potencia-item__text">
+            Controla tus ventas en línea desde Serfinanza Virtual Empresas
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sf-beneficios" class="sf-benefits">
+    <div class="sf-container">
+      <h2 class="sf-section-title">Diseñado para hacer más simple el día a día de tu negocio</h2>
+
+      <div class="sf-benefits__grid">
+        <article class="sf-benefit-card">
+          <div class="sf-icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><circle cx="7" cy="15" r="1.5" fill="#E31D3B" stroke="none"/></svg>
+          </div>
+          <div>
+            <h3 class="sf-benefit-card__title">Más formas<br>de pago</h3>
+            <p class="sf-benefit-card__desc">Acepta débito y crédito Visa y Mastercard sin depender solo del efectivo.</p>
+          </div>
+        </article>
+        <article class="sf-benefit-card">
+          <div class="sf-icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/><path d="M12 4v10"/><path d="m8 10 4 4 4-4"/><circle cx="16" cy="6" r="2.3" fill="#E31D3B" stroke="none"/></svg>
+          </div>
+          <div>
+            <h3 class="sf-benefit-card__title">Tu dinero directo a la cuenta</h3>
+            <p class="sf-benefit-card__desc">Abono automático en tu cuenta Serfinanza para mover tu negocio sin demoras.</p>
+          </div>
+        </article>
+        <article class="sf-benefit-card">
+          <div class="sf-icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M7 10h14l-4-4"/><path d="M17 14H3l4 4"/><circle cx="12" cy="12" r="2.2" fill="#E31D3B" stroke="none"/></svg>
+          </div>
+          <div>
+            <h3 class="sf-benefit-card__title">Menos efectivo en caja</h3>
+            <p class="sf-benefit-card__desc">Menos billetes en el mostrador, menos traslados y más tranquilidad en tu día.</p>
+          </div>
+        </article>
+        <article class="sf-benefit-card">
+          <div class="sf-icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M3 3v18h18"/><rect x="7" y="11" width="2.8" height="6" fill="#170C84" stroke="none"/><rect x="12" y="7" width="2.8" height="10" fill="#E31D3B" stroke="none"/><rect x="17" y="13" width="2.8" height="4" fill="#170C84" stroke="none"/></svg>
+          </div>
+          <div>
+            <h3 class="sf-benefit-card__title">Control total de tus ventas</h3>
+            <p class="sf-benefit-card__desc">Revisa tus abonos en línea y descarga reportes al instante para cuadrar caja.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="sf-vinculacion" class="sf-steps-section">
+    <div class="sf-container">
+      <div class="sf-steps__grid">
+        <div>
+          <h2 class="sf-section-title">Empieza a recibir pagos<br>con tarjeta en 4 pasos</h2>
+          <p class="sf-steps__subtitle">Un proceso claro y acompañado por nuestro equipo comercial desde el primer momento.</p>
+
+          <div class="sf-steps__cta-desktop">
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary">
+              Quiero recibir pagos con tarjeta
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="sf-steps__photo-box">
+            <div class="sf-steps__photo-backing"></div>
+            <img class="sf-steps__photo" src="images/negocios-sucursales.png" alt="Asesoría comercial para vinculación de comercios" />
+          </div>
+        </div>
+        <div class="sf-steps__list">
+          <div class="sf-step-item">
+            <div class="sf-step-item__num">01</div>
+            <div>
+              <h3 class="sf-step-item__title">Cuéntanos de tu negocio</h3>
+              <p class="sf-step-item__desc">Déjanos tus datos de contacto y cuéntanos la actividad principal de tu comercio a través de nuestro formulario en línea.</p>
+            </div>
+          </div>
+
+          <div class="sf-step-item">
+            <div class="sf-step-item__num">02</div>
+            <div>
+              <h3 class="sf-step-item__title">Una propuesta a tu medida</h3>
+              <p class="sf-step-item__desc">Nuestro equipo analiza las características y necesidades de tu negocio para presentarte una oferta de servicio <strong>personalizada</strong>.</p>
+            </div>
+          </div>
+
+          <div class="sf-step-item">
+            <div class="sf-step-item__num">03</div>
+            <div>
+              <h3 class="sf-step-item__title">Completa tu vinculación</h3>
+              <p class="sf-step-item__desc">Presenta la documentación solicitada y firma tu vinculación para formalizar la solicitud.</p>
+            </div>
+          </div>
+
+          <div class="sf-step-item">
+            <div class="sf-step-item__num">04</div>
+            <div>
+              <h3 class="sf-step-item__title">¡Y !</h3>
+              <p class="sf-step-item__desc">Una vez aprobada la solicitud y habilitado el sistema, tu punto de venta queda listo para empezar a recibir pagos electrónicos.</p>
+            </div>
+          </div>
+
+          <div class="sf-steps__cta-mobile">
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary">
+              Quiero recibir pagos con tarjeta
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sf-sectores" class="sf-sectors">
+    <div class="sf-container">
+      <h2 class="sf-section-title">Una solución que se adapta a ti y a tu negocio</h2>
+      <p class="sf-sectors__subtitle">
+        Cada sector tiene una manera de cobro distinta.<br>
+        Conoce cómo nuestra asesoría acompaña la cotidianidad de tu establecimiento
+      </p>
+      <input type="radio" name="sf-sector-tabs" id="sf-tab-1" class="sf-tab-radio" checked />
+      <input type="radio" name="sf-sector-tabs" id="sf-tab-2" class="sf-tab-radio" />
+      <input type="radio" name="sf-sector-tabs" id="sf-tab-3" class="sf-tab-radio" />
+      <input type="radio" name="sf-sector-tabs" id="sf-tab-4" class="sf-tab-radio" />
+      <input type="radio" name="sf-sector-tabs" id="sf-tab-5" class="sf-tab-radio" />
+      <input type="radio" name="sf-sector-tabs" id="sf-tab-6" class="sf-tab-radio" />
+      <div class="sf-tabs-nav" role="tablist">
+        <label for="sf-tab-1" class="sf-tab-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Tienda o ferretería
+        </label>
+        <label for="sf-tab-2" class="sf-tab-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+          Restaurantes
+        </label>
+        <label for="sf-tab-3" class="sf-tab-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+          Servicios Personales
+        </label>
+        <label for="sf-tab-4" class="sf-tab-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          Salud y Bienestar
+        </label>
+        <label for="sf-tab-5" class="sf-tab-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+          Autos y talleres
+        </label>
+        <label for="sf-tab-6" class="sf-tab-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M16 14h.01"/></svg>
+          Negocios con sucursales
+        </label>
+      </div>
+      <div class="sf-tab-panels">
+        <div class="sf-tab-panel sf-tab-panel--1">
+          <div class="sf-tab-panel__img-wrap">
+            <img src="images/tienda-ferreteria.png" alt="Tienda o ferretería recibiendo pagos con tarjeta" />
+          </div>
+          <div>
+            <h3 class="sf-tab-panel__title">Tienda o ferretería</h3>
+            <p class="sf-tab-panel__desc">
+              Cobra rápido en el mostrador y asegura cada venta ofreciendo pagos con tarjeta para compras del día o de mayor valor.
+            </p>
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary sf-btn--sm">
+              Conoce más para comercio y retail
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="sf-tab-panel sf-tab-panel--2">
+          <div class="sf-tab-panel__img-wrap">
+            <img src="images/restaurantes.png" alt="Restaurantes recibiendo pagos en mesa o caja" />
+          </div>
+          <div>
+            <h3 class="sf-tab-panel__title">Restaurantes</h3>
+            <p class="sf-tab-panel__desc">
+              Agiliza el cobro de cuentas con pagos directos y seguros en mesas o cajas, manteniendo el flujo constante de tus comensales.
+            </p>
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary sf-btn--sm">
+              Conoce más para gastronomía
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="sf-tab-panel sf-tab-panel--3">
+          <div class="sf-tab-panel__img-wrap">
+            <img src="images/servicios-personales.png" alt="Servicios personales y tratamientos recibiendo pagos" />
+          </div>
+          <div>
+            <h3 class="sf-tab-panel__title">Servicios Personales</h3>
+            <p class="sf-tab-panel__desc">
+              Ofrece una experiencia de pago cómoda y profesional para tus tratamientos, reduciendo el manejo de efectivo en recepción.
+            </p>
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary sf-btn--sm">
+              Conoce más para servicios personales
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="sf-tab-panel sf-tab-panel--4">
+          <div class="sf-tab-panel__img-wrap">
+            <img src="images/salud-bienestar.png" alt="Salud y Bienestar recibiendo pagos de consultas y productos" />
+          </div>
+          <div>
+            <h3 class="sf-tab-panel__title">Salud y Bienestar</h3>
+            <p class="sf-tab-panel__desc">
+              Recibe pagos presenciales de consultas y productos con total seguridad, agilidad y claridad en tus registros.
+            </p>
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary sf-btn--sm">
+              Conoce más para salud y bienestar
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="sf-tab-panel sf-tab-panel--5">
+          <div class="sf-tab-panel__img-wrap">
+            <img src="images/autos-talleres.png" alt="Autos y talleres recibiendo pagos de reparaciones y repuestos" />
+          </div>
+          <div>
+            <h3 class="sf-tab-panel__title">Autos y talleres</h3>
+            <p class="sf-tab-panel__desc">
+              Facilita el pago de reparaciones y repuestos mediante tarjetas de crédito y débito, sin complicaciones para tus clientes.
+            </p>
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary sf-btn--sm">
+              Conoce más para automotores
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="sf-tab-panel sf-tab-panel--6">
+          <div class="sf-tab-panel__img-wrap">
+            <img src="images/negocios-sucursales.png" alt="Negocios con múltiples sucursales" />
+          </div>
+          <div>
+            <h3 class="sf-tab-panel__title">Negocios con sucursales</h3>
+            <p class="sf-tab-panel__desc">
+              Centraliza tus recaudos y consulta las ventas de cada local de forma independiente para un control contable total.
+            </p>
+            <a href="#sf-formulario" class="sf-btn sf-btn--primary sf-btn--sm">
+              Conoce más para múltiples puntos
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sf-herramientas" class="sf-operate">
+    <div class="sf-container">
+      <div class="sf-operate__header">
+        <h2 class="sf-section-title">Todo lo que necesitas para operar y controlar tus cobros</h2>
+        <p class="sf-operate__sub">Te brindamos una solución integral compuesta por aceptación de pagos, abono seguro y canales de autogestión para tu negocio.</p>
+      </div>
+
+      <div class="sf-operate__grid">
+        <div class="sf-operate-card">
+          <div class="sf-operate-card__visual sf-operate-card__visual--photo">
+            <img src="images/hero.png" alt="Aceptación en tu mostrador con Visa y Mastercard" />
+            <div class="sf-operate-card__franchise-pill">
+              <img src="images/visa-logo.png" alt="Mastercard y Visa" />
+            </div>
+          </div>
+          <div class="sf-operate-card__heading">
+            <span class="sf-operate-card__num">1</span>
+            <h3 class="sf-operate-card__title">Aceptación en tu mostrador</h3>
+          </div>
+          <p class="sf-operate-card__desc">
+            Con tecnología para recibir las tarjetas más utilizadas en el mercado nacional e internacional:
+          </p>
+          <ul class="sf-check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Tarjetas débito.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Tarjetas de crédito.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Respaldo y aceptación Visa / Mastercard.
+            </li>
+          </ul>
+        </div>
+        <div class="sf-operate__arrow" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="sf-operate-card">
+          <div class="sf-operate-card__visual sf-operate-card__visual--abono">
+            <div class="sf-abono-pill">
+              <div class="sf-abono-pill__left">
+                <div class="sf-float-card__icon sf-float-card__icon--green">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M4 14v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/><path d="M12 4v10"/><path d="m8 10 4 4 4-4"/><circle cx="16" cy="6" r="2.2" fill="#63B32E" stroke="none"/></svg>
+                </div>
+                <div>
+                  <div class="sf-abono-pill__title">Abono automático</div>
+                  <div class="sf-abono-pill__sub">Cuenta Serfinanza</div>
+                </div>
+              </div>
+              <div class="sf-abono-pill__amount">+ $ 1.250.000</div>
+            </div>
+          </div>
+          <div class="sf-operate-card__heading">
+            <span class="sf-operate-card__num">2</span>
+            <h3 class="sf-operate-card__title">Gestión de tus recursos</h3>
+          </div>
+          <p class="sf-operate-card__desc">
+            Eliminamos los pasos innecesarios para que tu dinero llegue a donde debe estar.
+          </p>
+          <ul class="sf-check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Abono automático en tu cuenta Serfinanza.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Menor manejo de efectivo físico, mayor rendimiento.
+            </li>
+          </ul>
+        </div>
+        <div class="sf-operate__arrow" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="sf-operate-card">
+          <div class="sf-operate-card__visual sf-operate-card__visual--portal">
+            <div class="sf-portal-ui">
+              <div class="sf-portal-ui__dots">
+                <span style="background:#FF5F56"></span>
+                <span style="background:#FFBD2E"></span>
+                <span style="background:#27C93F"></span>
+              </div>
+              <div class="sf-portal-ui__topbar">
+                <span>Serfinanza Virtual Empresas</span>
+                <span style="opacity:0.8;font-weight:500">Adquirencia</span>
+              </div>
+              <div class="sf-portal-ui__stats">
+                <div class="sf-portal-ui__stat-box">
+                  <div class="sf-portal-ui__stat-label">Abonos de la semana</div>
+                  <div class="sf-portal-ui__stat-val">$ 8.420.000</div>
+                  <div class="sf-portal-ui__stat-badge">+100% en cuenta comercial</div>
+                </div>
+                <div class="sf-portal-ui__stat-box">
+                  <div class="sf-portal-ui__stat-label">Transacciones</div>
+                  <div class="sf-portal-ui__stat-val">312</div>
+                  <div class="sf-portal-ui__stat-badge">4 sedes</div>
+                </div>
+              </div>
+              <div class="sf-portal-ui__table">
+                <div class="sf-portal-ui__row sf-portal-ui__row--head">
+                  <span>CÓDIGO ÚNICO</span>
+                  <span>SEDE</span>
+                  <span>ABONO</span>
+                </div>
+                <div class="sf-portal-ui__row">
+                  <span>108420</span>
+                  <span>Sede Norte</span>
+                  <span>$ 3.150.000</span>
+                </div>
+                <div class="sf-portal-ui__row">
+                  <span>108425</span>
+                  <span>Sede Centro</span>
+                  <span>$ 2.870.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sf-operate-card__heading">
+            <span class="sf-operate-card__num">3</span>
+            <h3 class="sf-operate-card__title">Monitoreo y control empresarial</h3>
+          </div>
+          <p class="sf-operate-card__desc">
+            Canales digitales diseñados para consultar tus movimientos y facilitar la gestión contable de tu empresa.
+          </p>
+          <ul class="sf-check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Acceso permanente al portal Serfinanza Virtual Empresas.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Consulta detallada de abonos y ventas realizadas.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Identificación de recaudos por código único para comercios con múltiples sedes o terminales.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Descarga de reportes y extractos transaccionales para tu conciliación contable.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sf-more-solutions">
+    <div class="sf-container">
+      <h2 class="sf-more-solutions__title">Más soluciones para impulsar la operación de tu negocio</h2>
+      <p class="sf-more-solutions__sub">
+        En Banco Serfinanza ponemos a disposición de tu empresa un portafolio de productos financieros diseñados para acompañar tu crecimiento y optimizar el manejo de tu liquidez.
+      </p>
+
+      <div class="sf-more-solutions__grid">
+        <article class="sf-solution-card">
+          <div class="sf-icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><circle cx="16" cy="14" r="1.5" fill="#E31D3B" stroke="none"/></svg>
+          </div>
+          <h3 class="sf-solution-card__title">Cuentas comerciales</h3>
+          <p class="sf-solution-card__desc">Tu dinero de ventas siempre seguro, disponible y listo para operar.</p>
+        </article>
+
+        <article class="sf-solution-card">
+          <div class="sf-icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M7 10h14l-4-4"/><path d="M17 14H3l4 4"/><circle cx="12" cy="12" r="2.2" fill="#E31D3B" stroke="none"/></svg>
+          </div>
+          <h3 class="sf-solution-card__title">Gestión de pagos</h3>
+          <p class="sf-solution-card__desc">Paga a proveedores, nómina y servicios desde un solo lugar.</p>
+        </article>
+
+        <article class="sf-solution-card">
+          <div class="sf-icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#170C84" stroke-width="1.8"><path d="M3 20h18"/><rect x="6" y="12" width="2.8" height="6" fill="#170C84" stroke="none"/><rect x="11" y="9" width="2.8" height="9" fill="#E31D3B" stroke="none"/><rect x="16" y="6" width="2.8" height="12" fill="#170C84" stroke="none"/><path d="m5 10 6-5 4 2 4-4"/></svg>
+          </div>
+          <h3 class="sf-solution-card__title">Crédito y Financiación</h3>
+          <p class="sf-solution-card__desc">Accede a financiación a tu medida para hacer crecer tu negocio.</p>
+        </article>
+      </div>
+
+      <p class="sf-more-solutions__legal">
+        *Los productos financieros complementarios (cuentas, dispersión y financiación) son independientes de la solución de adquirencia. Su solicitud, evaluación, aprobación y contratación están sujetas a las políticas de riesgo y condiciones vigentes de Banco Serfinanza.
+      </p>
+    </div>
+  </section>
+  <section id="sf-costos-faq" class="sf-costs-faq">
+    <div class="sf-container">
+      <div class="sf-costs-faq__top">
+        <div>
+          <h2 class="sf-section-title">Costos claros, requisitos<br>simples</h2>
+        </div>
+        <div>
+          <p class="sf-costs-faq__intro">
+            Las condiciones y comisiones del servicio se definen de manera personalizada, evaluando factores como el tipo de actividad económica, el volumen de facturación y el comportamiento transaccional estimado de tu establecimiento. Solicita una propuesta comercial con nuestros asesores para conocer el esquema tarifario aplicable a tu negocio.
+          </p>
+          <a href="#sf-formulario" class="sf-btn sf-btn--outline">
+            Hablar con un asesor
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="sf-costs-faq__bottom">
+        <aside class="sf-req-box">
+          <h3 class="sf-req-box__title">Requisitos Básicos para la Vinculación</h3>
+          <p class="sf-req-box__sub">Para formalizar la solicitud de vinculación, debes:</p>
+          <ul class="sf-check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Diligenciar el Reglamento de adquirencia. <a href="#sf-formulario" class="sf-req-box__link">Consúltalo aquí</a></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Diligenciar el Formato de vinculación de adquirencia.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Vincularte a Serfinanza Virtual Empresas.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Contar con una cuenta de ahorros o corriente activa en Banco Serfinanza.</span>
+            </li>
+          </ul>
+        </aside>
+        <div>
+          <h3 class="sf-faq__heading">Preguntas Frecuentes</h3>
+          <div class="sf-faq-list">
+            <details class="sf-faq-item" open>
+              <summary>
+                <span>¿Qué medios de pago puedo aceptar con esta solución?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                Puedes recibir pagos de tarjetas débito y crédito de las franquicias Visa y Mastercard, emitidas por entidades bancarias nacionales e internacionales.
+              </div>
+            </details>
+
+            <details class="sf-faq-item">
+              <summary>
+                <span>¿Para qué tipos de negocio está disponible el servicio?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                Está disponible para comercios formalmente constituidos (personas naturales con establecimiento comercial o personas jurídicas) de sectores como comercio y retail, restaurantes, servicios personales, salud, talleres y negocios con múltiples sucursales.
+              </div>
+            </details>
+
+            <details class="sf-faq-item">
+              <summary>
+                <span>¿Necesito tener una cuenta en Banco Serfinanza para recibir los abonos?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                Sí, para recibir el abono automático de tus ventas debes contar con una cuenta de ahorros o cuenta corriente comercial activa en Banco Serfinanza.
+              </div>
+            </details>
+
+            <details class="sf-faq-item">
+              <summary>
+                <span>¿Cuándo recibo el dinero de las ventas realizadas con tarjeta?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                Los recursos producto de tus ventas se abonan directamente en tu cuenta Banco Serfinanza de acuerdo con los ciclos de compensación establecidos en tu acuerdo de vinculación.
+              </div>
+            </details>
+
+            <details class="sf-faq-item">
+              <summary>
+                <span>¿Cómo consulto el detalle de mis abonos y transacciones?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                A través del portal Serfinanza Virtual Empresas puedes consultar en línea tus movimientos, identificar recaudos por código único y descargar reportes para tu conciliación contable.
+              </div>
+            </details>
+
+            <details class="sf-faq-item">
+              <summary>
+                <span>¿Cómo se define el porcentaje de comisión del servicio?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                La tarifa se estructura de forma personalizada según el giro de tu negocio, el volumen de facturación mensual y el ticket promedio de tus transacciones.
+              </div>
+            </details>
+
+            <details class="sf-faq-item">
+              <summary>
+                <span>¿Qué documentos necesito para vincular mi comercio?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                Debes diligenciar el Reglamento y el Formato de vinculación de adquirencia, adjuntar la documentación legal de tu empresa (RUT, Cámara de Comercio y documento del representante legal) y estar vinculado a Serfinanza Virtual Empresas.
+              </div>
+            </details>
+
+            <details class="sf-faq-item">
+              <summary>
+                <span>¿Cómo solicito el servicio?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                Completa el formulario al final de esta página con los datos de tu comercio para que un asesor especializado te contacte y acompañe en el proceso.
+              </div>
+            </details>
+
+            <details class="sf-faq-item">
+              <summary>
+                <span>¿Qué sucede después de enviar mis datos en el formulario?</span>
+                <svg class="sf-faq-item__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <div class="sf-faq-item__body">
+                Nuestro equipo comercial evaluará el perfil de tu comercio, se pondrá en contacto contigo para presentarte una propuesta a tu medida y guiará la firma y habilitación de tu punto de venta.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sf-formulario" class="sf-form-section">
+    <div class="sf-container">
+      <div class="sf-form-section__header">
+        <h2 class="sf-form-section__title">Da el siguiente paso para modernizar los<br>cobros de tu negocio</h2>
+        <p class="sf-form-section__sub">
+          Déjanos tus datos comerciales para que un asesor especializado evalúe tu actividad y te presente una propuesta adaptada a tus necesidades.
+        </p>
+      </div>
+
+      <div class="sf-form-card">
+        <form action="#sf-formulario" method="post">
+          <div class="sf-form-grid-2">
+            <div class="sf-form-group">
+              <label class="sf-form-label" for="sf-nombre-contacto">Nombre completo del contacto</label>
+              <input class="sf-form-input" type="text" id="sf-nombre-contacto" name="nombre_contacto" placeholder="Beatriz Pinzón" required />
+            </div>
+
+            <div class="sf-form-group">
+              <label class="sf-form-label" for="sf-nombre-empresa">Nombre de la Empresa o Negocio</label>
+              <input class="sf-form-input" type="text" id="sf-nombre-empresa" name="nombre_empresa" placeholder="Ferretería Beatriz SAS" required />
+            </div>
+          </div>
+
+          <div class="sf-form-group">
+            <label class="sf-form-label" for="sf-nit">Número de identificación (Cédula o NIT)</label>
+            <input class="sf-form-input" type="text" id="sf-nit" name="identificacion" placeholder="Ingresa número sin puntos ni guiones" required />
+          </div>
+
+          <div class="sf-form-group">
+            <label class="sf-form-label" for="sf-ciudad">Ciudad donde opera el negocio</label>
+            <select class="sf-form-select" id="sf-ciudad" name="ciudad" required>
+              <option value="" selected disabled>Seleccionar ciudad</option>
+              <option value="Barranquilla">Barranquilla</option>
+              <option value="Bogotá">Bogotá D.C.</option>
+              <option value="Cartagena">Cartagena</option>
+              <option value="Santa Marta">Santa Marta</option>
+              <option value="Medellín">Medellín</option>
+              <option value="Cali">Cali</option>
+              <option value="Valledupar">Valledupar</option>
+              <option value="Montería">Montería</option>
+              <option value="Sincelejo">Sincelejo</option>
+              <option value="Riohacha">Riohacha</option>
+              <option value="Bucaramanga">Bucaramanga</option>
+              <option value="Otra">Otra ciudad</option>
+            </select>
+          </div>
+
+          <div class="sf-form-group">
+            <label class="sf-form-label" for="sf-tipo-negocio">Tipo de negocio</label>
+            <select class="sf-form-select" id="sf-tipo-negocio" name="tipo_negocio" required>
+              <option value="" selected disabled></option>
+              <option value="Comercio y Retail">Comercio y Retail</option>
+              <option value="Restaurantes y Gastronomía">Restaurantes y Gastronomía</option>
+              <option value="Servicios Personales">Servicios Personales</option>
+              <option value="Salud y Bienestar">Salud y Bienestar</option>
+              <option value="Automotor y Especializados">Automotor y Especializados</option>
+              <option value="Múltiples Puntos de Venta">Múltiples Puntos de Venta</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="sf-form-group">
+            <label class="sf-form-label" for="sf-ventas">Ventas mensuales aproximadas con tarjeta</label>
+            <select class="sf-form-select" id="sf-ventas" name="ventas_mensuales" required>
+              <option value="" selected disabled></option>
+              <option value="Aún no recibo tarjetas">Aún no recibo tarjetas</option>
+              <option value="Menos de $5.000.000">Menos de $5.000.000</option>
+              <option value="De $5.000.000 a $20.000.000">De $5.000.000 a $20.000.000</option>
+              <option value="Más de $20.000.000">Más de $20.000.000</option>
+            </select>
+          </div>
+
+          <div class="sf-form-group">
+            <span class="sf-form-label">¿Ya recibes pagos con tarjeta en tu negocio actualmente?</span>
+            <div class="sf-form-radios">
+              <label class="sf-radio-label">
+                <input type="radio" name="recibe_pagos" value="SI" required />
+                SÍ
+              </label>
+              <label class="sf-radio-label">
+                <input type="radio" name="recibe_pagos" value="NO" />
+                NO
+              </label>
+            </div>
+          </div>
+
+          <div class="sf-form-group">
+            <label class="sf-form-label" for="sf-celular">Número de celular de contacto</label>
+            <input class="sf-form-input" type="tel" id="sf-celular" name="celular" placeholder="Ingresa 10 dígitos sin puntos ni guiones" pattern="[0-9]{10}" required />
+          </div>
+
+          <div class="sf-form-group">
+            <label class="sf-form-label" for="sf-correo">Correo electrónico</label>
+            <input class="sf-form-input" type="email" id="sf-correo" name="correo" placeholder="nombre@empresa.com.co" required />
+          </div>
+
+          <label class="sf-form-legal">
+            <input type="checkbox" name="acepta_politica" required />
+            <span>Acepto la política de tratamiento de datos personales y autorizo a Banco Serfinanza a contactarme para fines comerciales.</span>
+          </label>
+
+          <button type="submit" class="sf-btn sf-btn--primary sf-form-submit">
+            Solicitar asesoría comercial
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>

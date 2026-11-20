@@ -1,0 +1,304 @@
+- generic [ref=e2]:
+  - navigation "Navegación de sección Adquirencia" [ref=e3]:
+    - generic [ref=e4]:
+      - link "Adquirencia" [ref=e5] [cursor=pointer]:
+        - /url: "#sf-inicio"
+      - link "Quiero recibir pagos con tarjeta" [ref=e6] [cursor=pointer]:
+        - /url: "#sf-formulario"
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - heading "Soluciones de pago para tu negocio" [level=1] [ref=e13]: Soluciones de pagopara tu negocio
+        - paragraph [ref=e14]: Más formas de cobrar para que tu negocio nunca se detenga.
+        - generic [ref=e15]:
+          - link "Quiero recibir pagos con tarjeta" [ref=e16] [cursor=pointer]:
+            - /url: "#sf-formulario"
+          - link "Hablar con un asesor" [ref=e19] [cursor=pointer]:
+            - /url: "#sf-formulario"
+        - 'generic "Franquicias aceptadas: Mastercard y Visa" [ref=e23]':
+          - img "Mastercard y Visa" [ref=e24]
+      - generic [ref=e26]:
+        - img "Comerciante recibiendo pagos con datáfono Banco Serfinanza" [ref=e29]
+        - generic [ref=e35]:
+          - generic [ref=e36]: Visa y Mastercard
+          - generic [ref=e37]: Débito y crédito
+        - generic [ref=e44]:
+          - generic [ref=e45]: Abono automático
+          - generic [ref=e46]: En tu cuenta Serfinanza
+    - generic [ref=e51]:
+      - generic [ref=e52]: "Potencia tu puntode venta:"
+      - generic [ref=e53]: Recibe pagos con Visa y Mastercard (débito y crédito)
+      - generic [ref=e59]: Abono directo a tu cuenta Serfinanza.
+      - generic [ref=e66]: Controla tus ventas en línea desde Serfinanza Virtual Empresas
+  - generic [ref=e75]:
+    - heading "Diseñado para hacer más simple el día a día de tu negocio" [level=2] [ref=e76]
+    - generic [ref=e77]:
+      - article [ref=e78]:
+        - generic [ref=e83]:
+          - heading "Más formas de pago" [level=3] [ref=e84]: Más formasde pago
+          - paragraph [ref=e85]: Acepta débito y crédito Visa y Mastercard sin depender solo del efectivo.
+      - article [ref=e86]:
+        - generic [ref=e92]:
+          - heading "Tu dinero directo a la cuenta" [level=3] [ref=e93]
+          - paragraph [ref=e94]: Abono automático en tu cuenta Serfinanza para mover tu negocio sin demoras.
+      - article [ref=e95]:
+        - generic [ref=e101]:
+          - heading "Menos efectivo en caja" [level=3] [ref=e102]
+          - paragraph [ref=e103]: Menos billetes en el mostrador, menos traslados y más tranquilidad en tu día.
+      - article [ref=e104]:
+        - generic [ref=e111]:
+          - heading "Control total de tus ventas" [level=3] [ref=e112]
+          - paragraph [ref=e113]: Revisa tus abonos en línea y descarga reportes al instante para cuadrar caja.
+  - generic [ref=e116]:
+    - generic [ref=e117]:
+      - heading "Empieza a recibir pagos con tarjeta en 4 pasos" [level=2] [ref=e118]: Empieza a recibir pagoscon tarjeta en 4 pasos
+      - paragraph [ref=e119]: Un proceso claro y acompañado por nuestro equipo comercial desde el primer momento.
+      - link "Quiero recibir pagos con tarjeta" [ref=e121] [cursor=pointer]:
+        - /url: "#sf-formulario"
+      - img "Asesoría comercial para vinculación de comercios" [ref=e126]
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]: "01"
+        - generic [ref=e130]:
+          - heading "Cuéntanos de tu negocio" [level=3] [ref=e131]
+          - paragraph [ref=e132]: Déjanos tus datos de contacto y cuéntanos la actividad principal de tu comercio a través de nuestro formulario en línea.
+      - generic [ref=e133]:
+        - generic [ref=e134]: "02"
+        - generic [ref=e135]:
+          - heading "Una propuesta a tu medida" [level=3] [ref=e136]
+          - paragraph [ref=e137]:
+            - text: Nuestro equipo analiza las características y necesidades de tu negocio para presentarte una oferta de servicio
+            - strong [ref=e138]: personalizada
+            - text: .
+      - generic [ref=e139]:
+        - generic [ref=e140]: "03"
+        - generic [ref=e141]:
+          - heading "Completa tu vinculación" [level=3] [ref=e142]
+          - paragraph [ref=e143]: Presenta la documentación solicitada y firma tu vinculación para formalizar la solicitud.
+      - generic [ref=e144]:
+        - generic [ref=e145]: "04"
+        - generic [ref=e146]:
+          - heading "¡Y !" [level=3] [ref=e147]
+          - paragraph [ref=e148]: Una vez aprobada la solicitud y habilitado el sistema, tu punto de venta queda listo para empezar a recibir pagos electrónicos.
+  - generic [ref=e150]:
+    - heading "Una solución que se adapta a ti y a tu negocio" [level=2] [ref=e151]
+    - paragraph [ref=e152]: Cada sector tiene una manera de cobro distinta. Conoce cómo nuestra asesoría acompaña la cotidianidad de tu establecimiento
+    - radio "Tienda o ferretería" [checked]
+    - radio "Restaurantes"
+    - radio "Servicios Personales"
+    - radio "Salud y Bienestar"
+    - radio "Autos y talleres"
+    - radio "Negocios con sucursales"
+    - tablist [ref=e153]:
+      - generic [ref=e154] [cursor=pointer]: Tienda o ferretería
+      - generic [ref=e158] [cursor=pointer]: Restaurantes
+      - generic [ref=e162] [cursor=pointer]: Servicios Personales
+      - generic [ref=e169] [cursor=pointer]: Salud y Bienestar
+      - generic [ref=e172] [cursor=pointer]: Autos y talleres
+      - generic [ref=e177] [cursor=pointer]: Negocios con sucursales
+    - generic [ref=e182]:
+      - img "Tienda o ferretería recibiendo pagos con tarjeta" [ref=e184]
+      - generic [ref=e185]:
+        - heading "Tienda o ferretería" [level=3] [ref=e186]
+        - paragraph [ref=e187]: Cobra rápido en el mostrador y asegura cada venta ofreciendo pagos con tarjeta para compras del día o de mayor valor.
+        - link "Conoce más para comercio y retail" [ref=e188] [cursor=pointer]:
+          - /url: "#sf-formulario"
+  - generic [ref=e192]:
+    - generic [ref=e193]:
+      - heading "Todo lo que necesitas para operar y controlar tus cobros" [level=2] [ref=e194]
+      - paragraph [ref=e195]: Te brindamos una solución integral compuesta por aceptación de pagos, abono seguro y canales de autogestión para tu negocio.
+    - generic [ref=e196]:
+      - generic [ref=e197]:
+        - generic [ref=e198]:
+          - img "Aceptación en tu mostrador con Visa y Mastercard" [ref=e199]
+          - img "Mastercard y Visa" [ref=e201]
+        - generic [ref=e202]:
+          - generic [ref=e203]: "1"
+          - heading "Aceptación en tu mostrador" [level=3] [ref=e204]
+        - paragraph [ref=e205]: "Con tecnología para recibir las tarjetas más utilizadas en el mercado nacional e internacional:"
+        - list [ref=e206]:
+          - listitem [ref=e207]: Tarjetas débito.
+          - listitem [ref=e210]: Tarjetas de crédito.
+          - listitem [ref=e213]: Respaldo y aceptación Visa / Mastercard.
+      - generic [ref=e219]:
+        - generic [ref=e221]:
+          - generic [ref=e228]:
+            - generic [ref=e229]: Abono automático
+            - generic [ref=e230]: Cuenta Serfinanza
+          - generic [ref=e231]: + $ 1.250.000
+        - generic [ref=e232]:
+          - generic [ref=e233]: "2"
+          - heading "Gestión de tus recursos" [level=3] [ref=e234]
+        - paragraph [ref=e235]: Eliminamos los pasos innecesarios para que tu dinero llegue a donde debe estar.
+        - list [ref=e236]:
+          - listitem [ref=e237]: Abono automático en tu cuenta Serfinanza.
+          - listitem [ref=e240]: Menor manejo de efectivo físico, mayor rendimiento.
+      - generic [ref=e246]:
+        - generic [ref=e248]:
+          - generic [ref=e253]:
+            - generic [ref=e254]: Serfinanza Virtual Empresas
+            - generic [ref=e255]: Adquirencia
+          - generic [ref=e256]:
+            - generic [ref=e257]:
+              - generic [ref=e258]: Abonos de la semana
+              - generic [ref=e259]: $ 8.420.000
+              - generic [ref=e260]: +100% en cuenta comercial
+            - generic [ref=e261]:
+              - generic [ref=e262]: Transacciones
+              - generic [ref=e263]: "312"
+              - generic [ref=e264]: 4 sedes
+          - generic [ref=e265]:
+            - generic [ref=e266]:
+              - generic [ref=e267]: CÓDIGO ÚNICO
+              - generic [ref=e268]: SEDE
+              - generic [ref=e269]: ABONO
+            - generic [ref=e270]:
+              - generic [ref=e271]: "108420"
+              - generic [ref=e272]: Sede Norte
+              - generic [ref=e273]: $ 3.150.000
+            - generic [ref=e274]:
+              - generic [ref=e275]: "108425"
+              - generic [ref=e276]: Sede Centro
+              - generic [ref=e277]: $ 2.870.000
+        - generic [ref=e278]:
+          - generic [ref=e279]: "3"
+          - heading "Monitoreo y control empresarial" [level=3] [ref=e280]
+        - paragraph [ref=e281]: Canales digitales diseñados para consultar tus movimientos y facilitar la gestión contable de tu empresa.
+        - list [ref=e282]:
+          - listitem [ref=e283]: Acceso permanente al portal Serfinanza Virtual Empresas.
+          - listitem [ref=e286]: Consulta detallada de abonos y ventas realizadas.
+          - listitem [ref=e289]: Identificación de recaudos por código único para comercios con múltiples sedes o terminales.
+          - listitem [ref=e292]: Descarga de reportes y extractos transaccionales para tu conciliación contable.
+  - generic [ref=e296]:
+    - heading "Más soluciones para impulsar la operación de tu negocio" [level=2] [ref=e297]
+    - paragraph [ref=e298]: En Banco Serfinanza ponemos a disposición de tu empresa un portafolio de productos financieros diseñados para acompañar tu crecimiento y optimizar el manejo de tu liquidez.
+    - generic [ref=e299]:
+      - article [ref=e300]:
+        - heading "Cuentas comerciales" [level=3] [ref=e305]
+        - paragraph [ref=e306]: Tu dinero de ventas siempre seguro, disponible y listo para operar.
+      - article [ref=e307]:
+        - heading "Gestión de pagos" [level=3] [ref=e313]
+        - paragraph [ref=e314]: Paga a proveedores, nómina y servicios desde un solo lugar.
+      - article [ref=e315]:
+        - heading "Crédito y Financiación" [level=3] [ref=e322]
+        - paragraph [ref=e323]: Accede a financiación a tu medida para hacer crecer tu negocio.
+    - paragraph [ref=e324]: "*Los productos financieros complementarios (cuentas, dispersión y financiación) son independientes de la solución de adquirencia. Su solicitud, evaluación, aprobación y contratación están sujetas a las políticas de riesgo y condiciones vigentes de Banco Serfinanza."
+  - generic [ref=e326]:
+    - generic [ref=e327]:
+      - heading "Costos claros, requisitos simples" [level=2] [ref=e329]: Costos claros, requisitossimples
+      - generic [ref=e330]:
+        - paragraph [ref=e331]: Las condiciones y comisiones del servicio se definen de manera personalizada, evaluando factores como el tipo de actividad económica, el volumen de facturación y el comportamiento transaccional estimado de tu establecimiento. Solicita una propuesta comercial con nuestros asesores para conocer el esquema tarifario aplicable a tu negocio.
+        - link "Hablar con un asesor" [ref=e332] [cursor=pointer]:
+          - /url: "#sf-formulario"
+    - generic [ref=e336]:
+      - complementary [ref=e337]:
+        - heading "Requisitos Básicos para la Vinculación" [level=3] [ref=e338]
+        - paragraph [ref=e339]: "Para formalizar la solicitud de vinculación, debes:"
+        - list [ref=e340]:
+          - listitem [ref=e341]:
+            - generic [ref=e344]:
+              - text: Diligenciar el Reglamento de adquirencia.
+              - link "Consúltalo aquí" [ref=e345] [cursor=pointer]:
+                - /url: "#sf-formulario"
+          - listitem [ref=e346]:
+            - generic [ref=e349]: Diligenciar el Formato de vinculación de adquirencia.
+          - listitem [ref=e350]:
+            - generic [ref=e353]: Vincularte a Serfinanza Virtual Empresas.
+          - listitem [ref=e354]:
+            - generic [ref=e357]: Contar con una cuenta de ahorros o corriente activa en Banco Serfinanza.
+      - generic [ref=e358]:
+        - heading "Preguntas Frecuentes" [level=3] [ref=e359]
+        - generic [ref=e360]:
+          - group [ref=e361]:
+            - generic "¿Qué medios de pago puedo aceptar con esta solución?" [ref=e362] [cursor=pointer]
+            - generic [ref=e366]: Puedes recibir pagos de tarjetas débito y crédito de las franquicias Visa y Mastercard, emitidas por entidades bancarias nacionales e internacionales.
+          - group [ref=e367]:
+            - generic "¿Para qué tipos de negocio está disponible el servicio?" [ref=e368] [cursor=pointer]
+          - group [ref=e372]:
+            - generic "¿Necesito tener una cuenta en Banco Serfinanza para recibir los abonos?" [ref=e373] [cursor=pointer]
+          - group [ref=e377]:
+            - generic "¿Cuándo recibo el dinero de las ventas realizadas con tarjeta?" [ref=e378] [cursor=pointer]
+          - group [ref=e382]:
+            - generic "¿Cómo consulto el detalle de mis abonos y transacciones?" [ref=e383] [cursor=pointer]
+          - group [ref=e387]:
+            - generic "¿Cómo se define el porcentaje de comisión del servicio?" [ref=e388] [cursor=pointer]
+          - group [ref=e392]:
+            - generic "¿Qué documentos necesito para vincular mi comercio?" [ref=e393] [cursor=pointer]
+          - group [ref=e397]:
+            - generic "¿Cómo solicito el servicio?" [ref=e398] [cursor=pointer]
+          - group [ref=e402]:
+            - generic "¿Qué sucede después de enviar mis datos en el formulario?" [ref=e403] [cursor=pointer]
+  - generic [ref=e408]:
+    - generic [ref=e409]:
+      - heading "Da el siguiente paso para modernizar los cobros de tu negocio" [level=2] [ref=e410]: Da el siguiente paso para modernizar loscobros de tu negocio
+      - paragraph [ref=e411]: Déjanos tus datos comerciales para que un asesor especializado evalúe tu actividad y te presente una propuesta adaptada a tus necesidades.
+    - generic [ref=e413]:
+      - generic [ref=e414]:
+        - generic [ref=e415]:
+          - generic [ref=e416]: Nombre completo del contacto
+          - textbox "Nombre completo del contacto" [ref=e417]:
+            - /placeholder: Beatriz Pinzón
+        - generic [ref=e418]:
+          - generic [ref=e419]: Nombre de la Empresa o Negocio
+          - textbox "Nombre de la Empresa o Negocio" [ref=e420]:
+            - /placeholder: Ferretería Beatriz SAS
+      - generic [ref=e421]:
+        - generic [ref=e422]: Número de identificación (Cédula o NIT)
+        - textbox "Número de identificación (Cédula o NIT)" [ref=e423]:
+          - /placeholder: Ingresa número sin puntos ni guiones
+      - generic [ref=e424]:
+        - generic [ref=e425]: Ciudad donde opera el negocio
+        - combobox "Ciudad donde opera el negocio" [ref=e426]:
+          - option "Seleccionar ciudad" [disabled] [selected]
+          - option "Barranquilla"
+          - option "Bogotá D.C."
+          - option "Cartagena"
+          - option "Santa Marta"
+          - option "Medellín"
+          - option "Cali"
+          - option "Valledupar"
+          - option "Montería"
+          - option "Sincelejo"
+          - option "Riohacha"
+          - option "Bucaramanga"
+          - option "Otra ciudad"
+      - generic [ref=e427]:
+        - generic [ref=e428]: Tipo de negocio
+        - combobox "Tipo de negocio" [ref=e429]:
+          - option [disabled] [selected]
+          - option "Tienda o ferretería (Comercio y retail)"
+          - option "Restaurantes y gastronomía"
+          - option "Servicios Personales"
+          - option "Salud y Bienestar"
+          - option "Autos y talleres"
+          - option "Negocios con sucursales"
+          - option "Otro sector"
+      - generic [ref=e430]:
+        - generic [ref=e431]: Ventas mensuales aproximadas con tarjeta
+        - combobox "Ventas mensuales aproximadas con tarjeta" [ref=e432]:
+          - option [disabled] [selected]
+          - option "Menos de $5.000.000"
+          - option "Entre $5.000.000 y $20.000.000"
+          - option "Entre $20.000.000 y $50.000.000"
+          - option "Más de $50.000.000"
+      - generic [ref=e433]:
+        - generic [ref=e434]: ¿Ya recibes pagos con tarjeta en tu negocio actualmente?
+        - generic [ref=e435]:
+          - generic [ref=e436] [cursor=pointer]:
+            - radio "SÍ" [ref=e437]
+            - text: SÍ
+          - generic [ref=e438] [cursor=pointer]:
+            - radio "NO" [ref=e439]
+            - text: "NO"
+      - generic [ref=e440]:
+        - generic [ref=e441]: Número de celular de contacto
+        - textbox "Número de celular de contacto" [ref=e442]:
+          - /placeholder: Ingresa 10 dígitos sin puntos ni guiones
+      - generic [ref=e443]:
+        - generic [ref=e444]: Correo electrónico
+        - textbox "Correo electrónico" [ref=e445]:
+          - /placeholder: nombre@empresa.com.co
+      - generic [ref=e446]:
+        - checkbox "Acepto la política de tratamiento de datos personales y autorizo a Banco Serfinanza a contactarme para fines comerciales." [ref=e447]
+        - generic [ref=e448]: Acepto la política de tratamiento de datos personales y autorizo a Banco Serfinanza a contactarme para fines comerciales.
+      - button "Solicitar asesoría comercial" [ref=e449] [cursor=pointer]
